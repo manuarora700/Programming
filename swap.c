@@ -23,5 +23,3 @@ void swap(int *c, int *d)
   *d = temp;
 }
 
-//Show this comment
-//Additional comment
