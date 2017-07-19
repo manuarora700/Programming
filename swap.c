@@ -14,5 +14,7 @@ int main()
 
   printf("a = %d, b = %d\n", a, b);
 
+//Dafuq is going on
 
+//I don't know the fuck is going on!
 }
