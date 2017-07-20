@@ -12,6 +12,8 @@ int main()
   printf("swapping...\n");
 
   printf("a = %d, b = %d\n", a, b);
+
+
 }
 
 void swap(int *c, int *d)
@@ -20,3 +22,4 @@ void swap(int *c, int *d)
   *c =*d;
   *d = temp;
 }
+
