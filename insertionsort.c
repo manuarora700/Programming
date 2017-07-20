@@ -41,4 +41,8 @@ int main()
         printf("| %d ", array[i]);
     }
     printf("|\n");
+
+    }
+
 }
+
