@@ -1,7 +1,8 @@
 #include<stdio.h>
-
+#include<time.h>
 int main()
 {
+    clock_t start;
     // Declaring variables and an array
     int n, d;
     int array[100];
@@ -27,6 +28,7 @@ int main()
     
     //Actual code for insertion sort
     // For loop to iterate through the array once
+    start = clock();
     for(int i = 1; i < n; i++)
     {
         // Setting first elemented to sorted || d = i;
@@ -43,15 +45,17 @@ int main()
             d--;
         }
     }
-    
+    start = clock() - start;
+    double time_taken = ((double)start)/CLOCKS_PER_SEC; // in seconds
     printf("Sorted array: \n");
     for(int i = 0; i < n; i++)
     {
         printf("| %d ", array[i]);
     }
     printf("|\n");
-
-    }
+    
+    printf("%f is the time taken by insertionSort\n", time_taken);
 
 }
+
 
