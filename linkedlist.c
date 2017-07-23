@@ -6,9 +6,9 @@ typedef struct node
     int value;
     struct node *next;
 }
-snode;
+sllnode;
 
-snode* create(int);
+sllnode* create(int);
 void insert_node_first();
 void insert_node_last();
 void insert_node_position();
@@ -17,16 +17,16 @@ void delete_position();
 void search();
 void update_value();
 void display();
-void rev_display(snode *);
+void rev_display(sllnode *);
 
-//typedef struct node snode;
+//typedef struct node sllnode;
 
-snode *newnode;
-snode *ptr;
-snode *prev;
-snode *temp;
-snode *first = NULL;
-snode *last = NULL;
+sllnode *newnode;
+sllnode *ptr;
+sllnode *prev;
+sllnode *temp;
+sllnode *first = NULL;
+sllnode *last = NULL;
 
 int main()
 {
@@ -107,9 +107,9 @@ int main()
 }
 
 // create()
-snode* create(int val)
+sllnode* create(int val)
 {
-    newnode = (snode *)malloc(sizeof(snode));
+    newnode = (sllnode *)malloc(sizeof(sllnode));
     
     if(newnode == NULL)
     {
@@ -230,7 +230,7 @@ void insert_node_position()
 
 void sorted_ascending()
 {
-    snode *nxt;
+    sllnode *nxt;
     int t;
  
     if (first == NULL)
@@ -405,7 +405,7 @@ void display()
 
 // rev_display();
 
-void rev_display(snode *ptr1)
+void rev_display(sllnode *ptr1)
 {
     int val;
     if(ptr1 == NULL)
