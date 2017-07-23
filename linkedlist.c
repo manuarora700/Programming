@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// defining structure for node using the name sllnode
 typedef struct node
 {
     int value;
@@ -8,6 +9,7 @@ typedef struct node
 }
 sllnode;
 
+// All the functions declarations related to operations on singly linked list.
 sllnode* create(int);
 void insert_node_first();
 void insert_node_last();
@@ -20,7 +22,7 @@ void display();
 void rev_display(sllnode *);
 
 //typedef struct node sllnode;
-
+// All the pointers required in a singly linked list
 sllnode *newnode;
 sllnode *ptr;
 sllnode *prev;
@@ -33,6 +35,7 @@ int main()
     int choice;
     char ans = 'Y';
     
+    // Loop to keep on asking the user to use operations on the list.
     while(ans =='Y' || ans == 'y')
     {
         printf("\n---------------------\n");
@@ -100,17 +103,20 @@ int main()
                 break;
         }
         
+        // If the user types y or Y then the loop continues.
         printf("\nDo you want to continue? (Y/N)");
         scanf(" %c", &ans);
     }
     return 0;
 }
 
-// create()
+// To create a singly linked list create(int val);
 sllnode* create(int val)
 {
+    // Dynamically assign memory to newnode pointer. Memory is equal to the size of sllnode 
     newnode = (sllnode *)malloc(sizeof(sllnode));
     
+    // if memory is not allocated the malloc returns NULL
     if(newnode == NULL)
     {
         printf("Memory not allocated\n");
@@ -118,29 +124,35 @@ sllnode* create(int val)
     }
     else
     {
+        // Set the newnode value and next pointer to NULL.
         newnode->value =val;
         newnode->next = NULL;
         return newnode;
     }
 }
 
-// insert_node_first()
+// To insert a node at the beginning of the linked list. Takes O(1) time. insert_node_first();
 
 void insert_node_first()
 {
+    // gets the value to be inserted
     int val;
     printf("Enter value to be inserted into the node: ");
     scanf("%d", &val);
-    
+    // Creates a newnode for that value 
     newnode = create(val);
+    
+    // This indicates that if there is only one node in the Linked List.
     if(first == last && last == NULL)
     {
+        // Set first and last  = newnode so that the list is not orphaned
         first = last = newnode;
         first->next = NULL;
         last->next = NULL;
     }
     else
     {
+        // DOne so that the list is not orphaned.
         temp = first;
         first = newnode;
         first->next = temp;
@@ -148,7 +160,7 @@ void insert_node_first()
     printf("\n----INSERTED-------\n");
 }
 
-// insert_node_last()
+// insert_node_last(). To insert node at the last
 void insert_node_last()
 {
     int val;
@@ -172,7 +184,7 @@ void insert_node_last()
     printf("\n-----INSERTED------\n");
 }
 
-//insert_node_position()
+//insert_node_position().To insert node at a specific location/position.
 
 void insert_node_position()
 {
