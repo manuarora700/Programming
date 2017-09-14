@@ -1,5 +1,5 @@
 // We can use map to easily solve this problem in linear time. The idea is to insert each element of the array arr[i]
-// in a map. We also checks if difference (arr[i], sum-arr[i]) already 
+// in a map. We also checks if difference (arr[i], sum-arr[i]) already
 // exists in the map or not. If the difference is seen before, we print the pair and return.
 
 #include <bits/stdc++.h>
@@ -14,6 +14,8 @@ void findPair(int arr[], int n, int sum)
     // do for each element
     for (int i = 0; i < n; i++)
     {
+
+      //Git commit
         // check if pair (arr[i], sum-arr[i]) exists
 
         // if difference is seen before, print the pair
