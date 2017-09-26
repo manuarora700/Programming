@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Naive approach
+// Simple solution would be to count number of 0’s present in the array (say k) and fill first k indexes in the array by 0 and all remaining indexes by 1.
 // Function to sort binary array in linear time
 int Sort(int A[], int n)
 {
