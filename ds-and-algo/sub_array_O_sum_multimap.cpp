@@ -26,6 +26,7 @@ void printallSubarrays(int arr[], int n)
         // sub-array with 0 sum
         if (map.find(sum) != map.end())
         {
+
             auto it = map.find(sum);
 
             // find all sub-arrays with same sum
