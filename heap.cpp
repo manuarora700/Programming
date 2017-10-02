@@ -46,7 +46,18 @@ void Heap::Insert(int element)
 /*
  * Delete Minimum Element
  */
-
+ void Heap::DeleteMin()
+ {
+     if (heap.size() == 0)
+     {
+         cout<<"Heap is Empty"<<endl;
+         return;
+     }
+     heap[0] = heap.at(heap.size() - 1);
+     heap.pop_back();
+     heapifydown(0);
+     cout<<"Element Deleted"<<endl;
+ }
 
 /*
  * Extract Minimum Element
