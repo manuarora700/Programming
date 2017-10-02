@@ -59,6 +59,8 @@ void Heap::Insert(int element)
      cout<<"Element Deleted"<<endl;
  }
 
+ 
+
 /*
  * Extract Minimum Element
  */
