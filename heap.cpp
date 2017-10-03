@@ -33,6 +33,7 @@ class Heap
 int Heap::Size()
 {
     return heap.size();
+    //Returns heap size
 }
 
 /*
@@ -42,6 +43,7 @@ void Heap::Insert(int element)
 {
     heap.push_back(element);
     heapifyup(heap.size() -1);
+    //Inserts the element
 }
 /*
  * Delete Minimum Element
@@ -59,7 +61,7 @@ void Heap::Insert(int element)
      cout<<"Element Deleted"<<endl;
  }
 
- 
+
 
 /*
  * Extract Minimum Element
