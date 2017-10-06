@@ -113,7 +113,8 @@ void printBuckets(struct BucketList *bl)
 
 int main()
 {
-	// Create the BucketLists for the data and set 10 as default number of Buckets.
+	// Create the BucketLists for the
+	//data and set 10 as default number of Buckets.
 	int V = 10, range, NOE, i;
 	struct BucketList* mybucket = createBucket(V);
 
