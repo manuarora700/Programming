@@ -1,5 +1,8 @@
 #include<iostream>
 
+using namespace std;
+
+// A function implementing Counter sort.
 void CounterSort(int a[], int n, int r, int lower)
 {
 	int i, j = 0, counter[r] = {0};
