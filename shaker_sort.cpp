@@ -3,6 +3,13 @@
 using namespace std;
 
 // A function to swap values using call by reference.
+void swap(int *a, int *b)
+{
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
 
 // A function implementing shaker sort.
 void ShakerSort(int a[], int n)
