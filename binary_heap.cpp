@@ -126,16 +126,16 @@ int BinaryHeap::parent(int child)
 /*
  * Heapify- Maintain Heap Structure bottom up
  */
-void BinaryHeap::heapifyup(int in)
-{
-    if (in >= 0 && parent(in) >= 0 && heap[parent(in)] > heap[in])
-    {
-        int temp = heap[in];
-        heap[in] = heap[parent(in)];
-        heap[parent(in)] = temp;
-        heapifyup(parent(in));
-    }
-}
+ void BinaryHeap::heapifyup(int in)
+ {
+     if (in >= 0 && parent(in) >= 0 && heap[parent(in)] > heap[in])
+     {
+         int temp = heap[in];
+         heap[in] = heap[parent(in)];
+         heap[parent(in)] = temp;
+         heapifyup(parent(in));
+     }
+ }
 
 /*
  * Heapify- Maintain Heap Structure top down
