@@ -140,23 +140,7 @@ int BinaryHeap::parent(int child)
 /*
  * Heapify- Maintain Heap Structure top down
  */
-void BinaryHeap::heapifydown(int in)
-{
 
-    int child = left(in);
-    int child1 = right(in);
-    if (child >= 0 && child1 >= 0 && heap[child] > heap[child1])
-    {
-       child = child1;
-    }
-    if (child > 0 && heap[in] > heap[child])
-    {
-        int temp = heap[in];
-        heap[in] = heap[child];
-        heap[child] = temp;
-        heapifydown(child);
-    }
-}
 
 /*
  * Main Contains Menu
