@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
-
+using namespace std;
 bool zAlgorithm(string pattern, string target)
 {
     string s = pattern + '$' + target;
