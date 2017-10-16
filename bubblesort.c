@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    
+    int n;
 
     // Array declared to store integers
     int array[1000];
