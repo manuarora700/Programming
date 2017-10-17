@@ -11,6 +11,12 @@ int main(void)
 
     printf("Enter numbers: \n");
 
+    int array[1000];
+    printf("Enter number of integers to be sorted\n");
+    scanf("%d", &n);
+
+    printf("Enter numbers: \n");
+
     // for loop to push values into the array.
     for(int i = 0; i < n; i++)
     {

@@ -1,4 +1,4 @@
-/*
+/*ˆunit 2 22 query processing 26 43 slide
  * C++ Program to Implement Z-Algorithm
  */
 #include <iostream>
