@@ -9,8 +9,6 @@ bool zAlgorithm(string pattern, string target)
 {
     string s = pattern + '$' + target;
     int n = s.length();
-    string s = pattern + '$' + target;
-    int n = s.length();
     vector<int> z(n, 0);
     int goal = pattern.length();
     int r = 0, l = 0, i;
