@@ -12,7 +12,6 @@ main()
     while (number <= 900)
     {
         digit1 = number - ((number / 10) * 10);
-        digit1 = number - ((number / 10) * 10);
 
         digit2 = (number / 10) - ((number / 100) * 10);
         digit3 = (number / 100) - ((number / 1000) * 10);
