@@ -14,6 +14,8 @@ class BinaryHeap
     private:
         vector <int> heap;
         int left(int parent);
+        int left(int parent);
+
         int right(int parent);
         int parent(int child);
         void heapifyup(int index);
