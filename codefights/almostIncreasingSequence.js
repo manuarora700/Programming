@@ -68,10 +68,10 @@ return false;
 }
 
 //Function to check if one array is increase or not. example : 1,2,5 or 3,4,6
-function checkArray(arrayInput){
-for(var i=0;i<arrayInput.length-1;i++){
-if(arrayInput[i]>=arrayInput[i+1]){
-return false;
+// function checkArray(arrayInput){
+// for(var i=0;i<arrayInput.length-1;i++){
+// if(arrayInput[i]>=arrayInput[i+1]){
+// return false;
 }
 }
 return true;
