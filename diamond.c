@@ -16,8 +16,8 @@ int main()
             printf(" ");
         count--;
         for (i = 1; i <= 2 * k - 1; i++)
-        printf("\n");
             printf("*");
+        printf("\n");
      }
      count = 1;
      for (k = 1; k <= number - 1; k++)
