@@ -1,5 +1,10 @@
-const script2 = require('./script2.js')
-const a = script2.largeNumber;
-const b = 5;
+const http = require('http');
 
-console.log(a + b);
+
+const server = http.createServer(() => {
+
+		console.log('I hear you!, Thanks for the request');
+
+})
+
+server.listen(3000);
